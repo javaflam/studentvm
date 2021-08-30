@@ -1,0 +1,21 @@
+= CGC STUDENT VM
+
+== Running
+
+Build Docker container
+[source,bash]
+----
+docker build -t fedora:cgc .
+----
+
+Create Docker volume
+[source,bash]
+----
+docker volume create m2repo
+----
+
+Run Docker container
+[source,bash]
+----
+docker run --name myfedora -v m2repo:/root/.m2/repository -it --rm fedora:cgc
+----

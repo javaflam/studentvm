@@ -1,4 +1,4 @@
-= CGC STUDENT VM
+= Student VM
 
 == Running
 
